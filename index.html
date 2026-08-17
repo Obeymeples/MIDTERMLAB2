@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechVista - Gallery Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#home">
+            <i class="bi bi-cpu"></i> Tech<span class="text-info">Vista</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" aria-label="Featured highlights">
+        <div
+          id="mainCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#mainCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#mainCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#mainCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://picsum.photos/id/2/1600/600"
+                class="d-block w-100 carousel-img"
+                alt="laptop banner" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Welcome to TechVista</h1>
+                <p>Your one stop showcase for the coolest tech.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/id/60/1600/600"
+                class="d-block w-100 carousel-img"
+                alt="circuit board banner" />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Explore Gadgets</h2>
+                <p>From smartphones to robotics, we got it all.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/id/180/1600/600"
+                class="d-block w-100 carousel-img"
+                alt="workspace banner" />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Built For Creators</h2>
+                <p>A gallery made for tech lovers like you</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="categories"
+        class="container my-5"
+        aria-labelledby="categoriesHeading">
+        <h2 id="categoriesHeading" class="text-center mb-4">
+          Browse Categories
+        </h2>
+        <nav aria-label="Category filters">
+          <ul class="row g-3 list-unstyled">
+            <li class="col-6 col-md-4 col-lg-2">
+              <button class="btn btn-outline-primary w-100">Laptops</button>
+            </li>
+            <li class="col-6 col-md-4 col-lg-2">
+              <button class="btn btn-outline-primary w-100">Smartphones</button>
+            </li>
+            <li class="col-6 col-md-4 col-lg-2">
+              <button class="btn btn-outline-primary w-100">Gaming</button>
+            </li>
+            <li class="col-6 col-md-4 col-lg-2">
+              <button class="btn btn-outline-primary w-100">Wearables</button>
+            </li>
+            <li class="col-6 col-md-4 col-lg-2">
+              <button class="btn btn-outline-primary w-100">Accessories</button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section
+        id="gallery"
+        class="container my-5"
+        aria-labelledby="galleryHeading">
+        <h2 id="galleryHeading" class="text-center mb-2">Image Gallery</h2>
+        <p class="text-center text-muted mb-4">
+          Click "View" on a picture to see more info
+        </p>
+
+        <ul class="row g-4 list-unstyled">
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="asus.jpg"
+                  class="card-img-top gallery-img"
+                  alt="Laptop on desk" />
+                <figcaption class="img-overlay">
+                  <span>Laptops</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">ASUS M415</h3>
+                <p class="card-text">
+                  A slim and powerful laptop for everyday work.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="huawei-watch-pro.jpg"
+                  class="card-img-top gallery-img"
+                  alt="foggy mountain tech shot" />
+                <figcaption class="img-overlay">
+                  <span>Wearables</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Huawei Watch Fit 5 Pro</h3>
+                <p class="card-text">
+                  Track your fitness and notifications on the go.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="lenovo-gaming.jpg"
+                  class="card-img-top gallery-img"
+                  alt="laptop closeup" />
+                <figcaption class="img-overlay">
+                  <span>Laptops</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Lenovo Legion 7i Gen 10</h3>
+                <p class="card-text">
+                  Built for speed with a dedicated graphics card.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal3">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="mechanical-keyboard.jpg"
+                  class="card-img-top gallery-img"
+                  alt="person coding" />
+                <figcaption class="img-overlay">
+                  <span>Accessories</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">RisoPhy Mechanical Gaming Keyboard</h3>
+                <p class="card-text">
+                  Clicky switches that make typing satisfying.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal4">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="gaming-mouse.jpg"
+                  class="card-img-top gallery-img"
+                  alt="chip closeup" />
+                <figcaption class="img-overlay">
+                  <span>Accessories</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Xiaomi Gaming Mouse Lite</h3>
+                <p class="card-text">A processor designed for AI workloads.</p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal5">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="mini-drone.webp"
+                  class="card-img-top gallery-img"
+                  alt="drone in the sky" />
+                <figcaption class="img-overlay">
+                  <span>Gadgets</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Xiaomi Mini Drone with Camera 8K FPV for Vlogging
+                </h3>
+                <p class="card-text">
+                  Capture aerial shots with 8k stabilization.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal6">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="gaming-headset.webp"
+                  class="card-img-top gallery-img"
+                  alt="headphones" />
+                <figcaption class="img-overlay">
+                  <span>Accessories</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Magegee Aurora Tri-mode RGB Gaming Headset White
+                </h3>
+                <p class="card-text">
+                  Noise cancelling headphones for deep focus.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal7">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="controller.jpg"
+                  class="card-img-top gallery-img"
+                  alt="gaming controller" />
+                <figcaption class="img-overlay"><span>Gaming</span></figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Nintendo Switch Pro Controller</h3>
+                <p class="card-text">
+                  Ergonomic controller with programmable buttons.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal8">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="phone.png"
+                  class="card-img-top gallery-img"
+                  alt="smartphone on table" />
+                <figcaption class="img-overlay">
+                  <span>Smartphones</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Zenfone 12 Ultra</h3>
+                <p class="card-text">
+                  Triple camera setup with all day battery.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal9">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="roboarm.avif"
+                  class="card-img-top gallery-img"
+                  alt="robot arm" />
+                <figcaption class="img-overlay">
+                  <span>Accessories</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">
+                  RMini Robot Arm 4 Axis 3kgs Palletzing Robotic Arm
+                </h3>
+                <p class="card-text">
+                  A small robotic arm for automation projects.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal10">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="meta-quest.webp"
+                  class="card-img-top gallery-img"
+                  alt="vr headset" />
+                <figcaption class="img-overlay"><span>Gaming</span></figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Meta Quest 3 All In One VR Gaming Headset (White)
+                </h3>
+                <p class="card-text">
+                  Step into virtual worlds with wide FOV lenses.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal11">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <article class="card gallery-card h-100">
+              <figure class="img-wrap m-0">
+                <img
+                  src="speaker.jpg"
+                  class="card-img-top gallery-img"
+                  alt="smart speaker" />
+                <figcaption class="img-overlay">
+                  <span>Gadgets</span>
+                </figcaption>
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Vega Portable Speaker Vega</h3>
+                <p class="card-text">
+                  Voice controlled smart speaker for your home.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal12">
+                  View
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="bg-light py-5" aria-labelledby="aboutHeading">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-md-6">
+              <figure class="m-0">
+                <img
+                  src="https://picsum.photos/id/48/600/400"
+                  class="img-fluid rounded shadow"
+                  alt="about us image" />
+              </figure>
+            </div>
+            <div class="col-12 col-md-6">
+              <h2 id="aboutHeading">About TechVista</h2>
+              <p>
+                TechVista is a small gallery website made to showcase the latest
+                and coolest technology products, from laptops to robots.
+              </p>
+
+              <div class="accordion" id="aboutAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                      aria-expanded="true"
+                      aria-controls="faq1">
+                      Our Mission
+                    </button>
+                  </h3>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                      We want to give people a simple place to browse cool tech
+                      items and get inspired.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="container my-5"
+        aria-labelledby="contactHeading">
+        <h2 id="contactHeading" class="text-center mb-4">Contact Us</h2>
+
+        <div class="alert alert-info col-12 col-lg-8 mx-auto" role="alert">
+          Got questions about a product? Fill out the form below and we will get
+          back to you soon!
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <form>
+              <fieldset>
+                <legend class="visually-hidden">Contact form</legend>
+                <div class="mb-3">
+                  <label class="form-label" for="contactName">Your Name</label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    class="form-control"
+                    placeholder="Enter your name" />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="contactEmail"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    class="form-control"
+                    placeholder="name@example.com" />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="contactMessage">Message</label>
+                  <textarea
+                    id="contactMessage"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Type your message here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <h2 class="h5">TechVista</h2>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h2 class="h5">Quick Links</h2>
+            <nav aria-label="Footer navigation">
+              <ul class="list-unstyled">
+                <li><a href="#home" class="footer-link">Home</a></li>
+                <li><a href="#gallery" class="footer-link">Gallery</a></li>
+                <li><a href="#about" class="footer-link">About</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h2 class="h5">Follow us</h2>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-light" aria-label="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light" aria-label="Twitter"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-light" aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="text-secondary" />
+        <p class="text-center small mb-0">
+          © 2026 TechVista. All rights reserved. | Charles Cuerdo - 2-IT-A |
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      aria-labelledby="modal1Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal1Label">ASUS M415</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img src="asus.jpg" class="img-fluid rounded" alt="ASUS M415" />
+            </figure>
+            <p>
+              The ASUS M415 is a slim, lightweight laptop made for students and
+              professionals who need to work on the go. It has a long battery
+              life and a bright display.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      aria-labelledby="modal2Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal2Label">Huawei Watch Fit 5 Pro</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="huawei-watch-pro.jpg"
+                class="img-fluid rounded"
+                alt="Smart Watch Pro large" />
+            </figure>
+            <p>
+              Stay connected wherever you go. The Huawei Watch Fit 5 Pro tracks
+              your steps, heart rate, and gives you notification right on your
+              wrist.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal3"
+      tabindex="-1"
+      aria-labelledby="modal3Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal3Label">
+              Lenovo Legion 7i Gen 10
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="lenovo-gaming.jpg"
+                class="img-fluid rounded"
+                alt="Lenovo Legion 7i Gen 10" />
+            </figure>
+            <p>
+              Built with a dedicated graphics card and a fast refresh rate
+              screen, the Lenovo Legion 7i Gen 10 is made for people who wants
+              performance on the go.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal4"
+      tabindex="-1"
+      aria-labelledby="modal4Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal4Label">
+              RisoPhy Mechanical Gaming Keyboard
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="mechanical-keyboard.jpg"
+                class="img-fluid rounded"
+                alt="RisoPhy Mechanical Gaming Keyboard" />
+            </figure>
+            <p>
+              A satisfying typing experience with clicky mechanical switches and
+              customizable RGB backlighting.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal5"
+      tabindex="-1"
+      aria-labelledby="modal5Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal5Label">
+              Xiaomi Gaming Mouse Lite
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="gaming-mouse.jpg"
+                class="img-fluid rounded"
+                alt="Xiaomi Gaming Mouse Lite" />
+            </figure>
+            <p>
+              Designed specifically for steady clickability and efficient
+              especially for gaming.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal6"
+      tabindex="-1"
+      aria-labelledby="modal6Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal6Label">
+              Xiaomi Mini Drone with Camera 8K FPV for Vlogging
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="mini-drone.webp"
+                class="img-fluid rounded"
+                alt="Xiaomi Mini Drone" />
+            </figure>
+            <p>
+              Capture stunning aerial footage in 8k with the Xiaomi Mini Drone's
+              built in stabilization system.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal7"
+      tabindex="-1"
+      aria-labelledby="modal7Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal7Label">
+              Magegee Aurora Tri-mode RGB Gaming Headset White
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="gaming-headset.webp"
+                class="img-fluid rounded"
+                alt="Headphones" />
+            </figure>
+            <p>
+              Block out the noise and focus on what matters with active noise
+              cancelling and 30 hours of battery.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal8"
+      tabindex="-1"
+      aria-labelledby="modal8Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal8Label">Pro Controller</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="controller.jpg"
+                class="img-fluid rounded"
+                alt="Pro Controller" />
+            </figure>
+            <p>
+              An ergonomic controller with programmable buttons made for
+              competitive gamers.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal9"
+      tabindex="-1"
+      aria-labelledby="modal9Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal9Label">Zenfone 12 Ultra</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="phone.png"
+                class="img-fluid rounded"
+                alt="Zenfone 12 Ultra" />
+            </figure>
+            <p>
+              Featuring a triple camera setup and all day battery life, the
+              Zenfone 12 Ultra keeps up with your busy schedule.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal10"
+      tabindex="-1"
+      aria-labelledby="modal10Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal10Label">
+              RMini Robot Arm 4 Axis 3kgs Palletzing Robotic Arm
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="roboarm.avif"
+                class="img-fluid rounded"
+                alt="Robo Arm Mini" />
+            </figure>
+            <p>
+              A compact robotic arm perfect for hobby automation and school
+              robotics projects.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal11"
+      tabindex="-1"
+      aria-labelledby="modal11Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal11Label">
+              Meta Quest 3 All In One VR Gaming Headset (White)
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="meta-quest.webp"
+                class="img-fluid rounded"
+                alt="Meta Quest" />
+            </figure>
+            <p>
+              Step into virtual worlds with a wide field of view and crisp
+              resolution lenses.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal12"
+      tabindex="-1"
+      aria-labelledby="modal12Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modal12Label">
+              Vega Portable Speaker Vega
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <figure class="m-0 mb-3">
+              <img
+                src="speaker.jpg"
+                class="img-fluid rounded"
+                alt="Vega Portable Speaker" />
+            </figure>
+            <p>
+              Control your smart home and play your favorite music with just
+              your voice.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
